@@ -2,11 +2,8 @@
 
 # Infinite loop to restart the bot in case of exit
 while true; do
-  # Set the authentication number directly
-  AUTH_NUMBER="6288227606701"
-
-  echo "Starting the bot with AUTH_NUMBER: $AUTH_NUMBER"
-  node start.js --auth_number="$AUTH_NUMBER"  # Replace this with the actual command to start your bot and pass the auth number
+  echo "Starting the bot..."
+  KEY=6288227606701 node start.js  # Replace this with the actual command to start your bot
   
   EXIT_CODE=$?
   echo "Bot exited with code: $EXIT_CODE"
